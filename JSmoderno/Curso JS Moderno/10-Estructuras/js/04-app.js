@@ -1,26 +1,17 @@
-// Algunas veces vas a desear revisar si se cumple más de una condición...
-let rol = 'ADMIN';
+// Operador Mayor que y Menor que
 
-if(rol === 'ADMIN') {
-    console.log('El Usuario puede editar, eliminar y ver toda la información');
-} else if(rol === 'EDITOR' ) {
-    console.log('El usuario solo puede editar sus registros');
+const dinreo = 1000;
+const totalApagar = 500;
+const tarjeta = true;
+const cheque = true;
+
+
+if(dinreo >= totalApagar) {
+    console.log('Si podemos pagar');
+} else if(tarjeta) {
+    console.log('Si puedo pagar porque tengo la tarjeta');
+} else if(tarjeta) {
+    console.log('Si puedo pagar porque tengo la tarjeta');
 } else {
-    console.log('El Usuario es visitante, solo puede ver la información');
+    console.log('Fondos insuficientes');
 }
-
-// El problema del else if es que si agregas múltiples llegan a ser complejos de leer...
-
-let rol = 'ADMIN';
-
-if(rol === 'ADMIN') {
-    console.log('El Usuario puede editar, eliminar y ver toda la información');
-} else if(rol === 'EDITOR' ) {
-    console.log('El usuario puede editar todos los registros');
-} else if(rol === 'AUTOR') { 
-    console.log('El usuario solo puede registrar usuarios');
-} else {
-    console.log('El Usuario es visitante, solo puede ver la información');
-}
-
-// Para ello llegan a ser más útiles los Switch, veamos que son y después volvemos hacia más ejemplos de if else
